@@ -24,6 +24,10 @@ html {
   font-family: 'Jost', sans-serif;
 }
 
+body{
+  padding: 8px;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -59,6 +63,10 @@ hr {
 
 p{
   font-family: 'Jost', sans-serif;
+}
+
+li{
+  list-style: none;
 }
 
 /*
@@ -129,10 +137,11 @@ header {
 .logo a {
   margin-left: 10px;
   text-decoration: none;
-  color: #000;
+  color: #1F2933;
   text-transform: uppercase;
   font-family: 'Hammersmith One', sans-serif;
   font-size: 1.4em;
+  font-style: italic;
 }
 
 .logo img {
@@ -151,6 +160,12 @@ header nav li{
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
+  transition: all 0.5s ease;
+  /* transform: scale(1.5); */
+}
+
+.nav-ul a:hover{
+  color: #ff4754;
 }
 .nav_menu ul{
   display: block;
@@ -369,6 +384,8 @@ header nav li{
   user-select: none;
   text-decoration: none;
   background-image: linear-gradient(-131deg, #802215 0%, #D4776A 100%);
+  box-shadow: 0 15px 35px rgba(128, 34, 21, 0.3);
+
   color: #fff;
   letter-spacing: 0.02em;
   transition: all .3s ease-in-out;
@@ -428,15 +445,11 @@ header nav li{
 }
 
 .skills{
-
   margin-top: 35px !important;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
-
- 
 }
 
 .card{
@@ -570,12 +583,189 @@ header nav li{
 }
 
 
+.tecnologias{
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-lenguaje{
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.item-lenguaje i{
+  font-size: 50px;
+  color: #D4776A;
+  padding: 0;
+}
+.txtTecnologia{
+  text-transform: uppercase;
+  font-family: 'Jost', sans-serif;
+  color: #8C8A95;
+  font-weight: 500;
+  margin-top: 8px;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 600px){
+  .tecnologias{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .item-lenguaje{
+    width: 120px;
+  }
+}
+
+/* Footer */
+
+footer{
+    margin-top: 75px;
+    background-image: linear-gradient(-131deg, #FFE4C7  0%, #facac5 100%);
+}
+.wrapper {
+  max-width: 90%;
+    margin: 64px auto;
+    width: 950px;
+}
+
+.footer-top{
+  position: relative;
+  padding: 64px 16px;
+  
+}
+
+.footer-top img{
+  width: 150px;
+  height: 150px;
+}
+
+.footer-top h2{
+  font-size: 30px;
+  font-family: 'Jost', sans-serif;
+  color: #1F2933;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 850px){
+.footer-top h2 {
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0;
+    color: #1F2933;
+    margin-bottom: 30px;
+}
+}
+#avatar{
+  width: 150px;
+  /* height: 150px; */
+  border-radius: 50%;
+  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.3);
+  margin-top: -7rem;
+}
+.social {
+  padding: 16px 0;
+  margin: 0 auto;
+}
+
+.social a{
+  color: #DA918A;
+}
+
+.social a:hover{
+  color: #802215;
+}
+
+.social a i{
+  font-size: 2em;
+}
+
+.fab {
+  padding: .5em;
+  padding-left: 0em;
+  transition: all .3s ease-in;
+}
+
+.upside p {
+  width: 700px;
+  max-width: 90%;
+  font-size: 18px;
+    line-height: 30px;
+    color: #1F2933;
+}
+.upside span{
+  color: #802215;
+  /* font-style: oblique; */
+ font-weight: 600;
+}
+
+.footer-down{
+  padding:0px;
+  width: 920px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+.footer-down h3{
+  font-size: 30px;
+  color: #1F2933;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+}
+
+.downside-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 600px){
+  .downside-links{
+    flex-direction: row;
+  }
+}
 
 
+.undertag {
+  color: #616e7c;
+  font-size: 20px;
+}
+
+.footer-down ul {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style: none;
+  font-family: 'Jost', sans-serif;
+}
+
+.footer-information{
+  border-top: 1px #d3d2d2 solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.footer-information p{
+  text-align: center;
+  margin: 10px;
+  line-height: 30px;
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
 
 
+/* KEYFRAMES */
 
-
+@keyframes mover{
+  0%{
+    transform: translate(100%);
+  }
+}
 
 /* ==========================================================================
    Helper classes

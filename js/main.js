@@ -1,4 +1,17 @@
 
+  window.addEventListener('scroll', function(){
+    let animacion = document.getElementsByName('#animation');
+    let posicionObj = animacion.getBoundingClientRect().top;
+    let sizeScreen = window.innerHeight/2;
+
+    if(posicionObj < sizeScreen){
+      animacion.style.animation = 'mover 1s ease-out';
+    }
+    
+
+
+  })
+
   let button = document.getElementById("nav-icon1");
   let menu = document.querySelector(".nav_menu");
   

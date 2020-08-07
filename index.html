@@ -9,6 +9,9 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+   <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -45,7 +48,7 @@
         <a href="#portafolio">
           <li class="menu_item">Portafolio</li>
         </a>
-        <a href="#">
+        <a href="#contactame">
           <li class="menu_item">Contacto</li>
         </a>
       </ul>
@@ -69,15 +72,15 @@
 
   <section class="hero">
     <div class="columns">
-      <div class="column media">
+      <div class="column media animate__animated animate__slideInLeft">
         <img src="img/lovecode.png" width="250px" alt="">
       </div>
       <div class="column text">
-        <h1>Freelance <span class="typed"></span></h1>
-        <p>Bienvenidos a mi sitio web! Mi nombre es Miguel Gongora y soy desarrollador, diseniador web y especialista en
+        <h1 class="animate__animated animate__slideInRight">Freelance <span class="typed"></span></h1>
+        <p class="animate__animated animate__slideInUp">Bienvenidos a mi sitio web! Mi nombre es Miguel Gongora y soy desarrollador, diseniador web y especialista en
           SEO. Como freelance estoy trabajando con clientes de todo el mundo 🌎</p>
 
-        <a href="#" id="hero-button" class="button primary inverted">Mi portafolio ☕️</a>
+        <a href="#" id="hero-button" class="button primary inverted animate__animated animate__flipInX">Mi portafolio ☕️</a>
       </div>
     </div>
   </section>
@@ -95,14 +98,14 @@
       </div>
 
       <div class="skills">
-        <div class="card">
+        <div class="card" id="animation">
           <img src="img/undraw_web_devices_ad58.svg" width="100px">
           <h3>Desarrollo de sistemas personalizados para tu empresa</h3>
           <p>Diseño sistemas web para tu negocio. Sitios web atractivos para mejorar la experiencia de tus clientes,
             puedes llevar el control de lo que sucede en tu negocio con tan solo un click estes donde estes!</p>
         </div>
 
-        <div class="card">
+        <div class="card" id="animation">
 
           <img src="img/undraw_visual_data_b1wx.svg" width="80px">
           <h3>SEO en tu sitio web</h3>
@@ -112,7 +115,7 @@
 
         </div>
 
-        <div class="card">
+        <div class="card" id="animation">
           <img src="img/undraw_web_shopping_dd4l.svg" width="90px">
           <h3>Desarrollo de Tiendas Virtuales</h3>
           <p>Si lo que buscas es crear una tienda virtual estas en el lugar indicado. Poseo mucha experiencia en la
@@ -128,7 +131,8 @@
   </div>
   <!--Aca termina Acerca de Mi-->
 
-  <div class="container" id="portafolio">
+  <!--
+  <div class="" id="portafolio">
     <div class="columns">
       <div class="about-me">
         <h3 class="subtitle">Portafolio</h3>
@@ -174,9 +178,107 @@
 
       </div>
     </div>
+  </div>  Termina portafolio -->
+  <div class="container">
+    <div class="columns">
+      <div class="lenguajes">
+        <div class="about-me">
+          <h3 class="subtitle">Lenguajes y Tecnologias</h3>
+          <h2 class="title">Frontend</h2>
+          <div class="tecnologias">
+            <div class="item-lenguaje">
+              <i class="fab fa-html5"></i>
+              <p class="txtTecnologia">Html</p>
+            </div>
+            <div class="item-lenguaje">
+              <i class="fab fa-css3-alt"></i>
+              <p class="txtTecnologia">Css</p>
+            </div>
+            <div class="item-lenguaje">
+              <i class="fab fa-js"></i>
+              <p class="txtTecnologia">Javascript</p>
+            </div>
+            <div class="item-lenguaje">
+              <i class="fab fa-angular"></i>
+              <p class="txtTecnologia">Angular</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="about-me">
+        <h2 class="title">Backend</h2>
+        <div class="tecnologias">
+          <div class="item-lenguaje">
+            <i class="fab fa-java"></i>
+            <p class="txtTecnologia">Java</p>
+          </div>
+          <div class="item-lenguaje">
+            <i class="fab fa-php"></i>
+            <p class="txtTecnologia">PHP</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-me">
+        <h2 class="title">Bases de Datos</h2>
+        <div class="tecnologias">
+          <div class="item-lenguaje">
+            <i class="fas fa-database"></i>
+            <p class="txtTecnologia">Mysql & Oracle</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <footer>
+    <div class="wrapper">
+      <div class="footer-top">
+        <img id="avatar" src="img/img98152.jpg" alt="">
+        <div class="social">
+          <a href="https://twitter.com/mgongora_" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://gt.linkedin.com/in/miguel-g%C3%B3ngora-a6649117b" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/mgongora_/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/mgongorag" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <h2 id="contactame">Contactame!</h2>
+        <div class="upside">
+          <p>Echa un vistazo a los proyectos con los que he trabajado. Sígueme en <span>mis redes sociales</span> o envíame un correo electrónico, generalmente respondo en poco tiempo &#128344;</p>
+        </div>
+        <div class="upside">
+          <p>¿Alguna pregunta o idea? ¡No dudes en enviarme un mensaje! Obtendrás un diseño web moderno y simple.
+            Haremos cosas grandiosas 🚀</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <div class="footer-down">
+    <div class="footer-wrapper">
+      <h3>Web Developer & Systems Engineering Student</h3>
+      <span class="undertag">Miguel Gongora</span>
+      <div class="downside-links">
+        <ul class="links">
+          <li>Creando con ❤️</li>
+          <li>Responsive design🎨</li>
+          <li>Frontend/Backend developer☕️</li>
+        </ul>
+        <ul class="link">
+          <li>miguelgongora12@gmail.com</li>
+          <a href="#portafolio"><li>Portafolio</li></a>
+          <a href="#portafolio"><li>Acerca de mi</li></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-information">
+    <p>&copy; 2020 Miguel Gongora - Todos los Derechos Reservados</p>
+  </div>
 
 
 
