@@ -57,11 +57,12 @@
     */
 
 const typed = new Typed('.typed', {
-  strings: ['<i class="habilidades">web developer</i>',
-            '<i class="habilidades">web designer</i>', 
-            '<i class="habilidades">systems analyst</i>',
-            '<i class="habilidades">SEO specialist</i>',
-            '<i class="habilidades">systems engineer</i>'],
+  strings: ['<i class="habilidades">web</i>',
+            '<i class="habilidades">javascript</i>', 
+            '<i class="habilidades">PHP</i>',
+            '<i class="habilidades">java</i>',
+            '<i class="habilidades">frontend</i>',
+            '<i class="habilidades">backend</i>'],
 
             stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
 	          typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
